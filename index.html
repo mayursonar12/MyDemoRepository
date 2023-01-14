@@ -4,6 +4,28 @@
         <title>My webpage Title</title>
     </head>
     <body>
+        <input id="inputfield" type="text">
+        <button onclick="buttonclick()">Add item to list</button>
+        <div id="listDiv">
+
+        </div>
+
+        <script>
+
+            function buttonclick () {
+
+                var itemName = document.getElementById('inputfield').value;
+                var h1tag = document.createElement('h1');
+                h1tag.innerHTML = itemName;
+
+                var division = document.getElementById('listDiv');
+                division.appendChild(h1tag);
+                //document.body.append("test body");
+            }
+
+           
+
+        </script>
 
     </body>
 </html>
