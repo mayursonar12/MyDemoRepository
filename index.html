@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>My webpage Title</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <input id="inputfield" type="text">
@@ -9,23 +10,21 @@
         <div id="listDiv">
 
         </div>
+        
+        <div>
+            <div class="openImageClass active"  id="open">
+                <img src="images/hear-no-evil-monkey.jpeg">
+            </div>
+            <!-- <button>Hide Open eyes monkey</button> -->
+            <div class="closedImageClass" id="closed">
+                <img src="images/see-no-evil-monkey.jpeg">
+            </div>
+            <!-- <button>Hide closed eyes monkey</button> -->
+        </div>
 
-        <script>
+        
 
-            function buttonclick () {
-
-                var itemName = document.getElementById('inputfield').value;
-                var h1tag = document.createElement('h1');
-                h1tag.innerHTML = itemName;
-
-                var division = document.getElementById('listDiv');
-                division.appendChild(h1tag);
-                //document.body.append("test body");
-            }
-
-           
-
-        </script>
+        <script src="app.js"></script>
 
     </body>
 </html>

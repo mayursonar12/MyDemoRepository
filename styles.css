@@ -1,0 +1,28 @@
+.class4 {
+    display:none;
+}
+
+.openImageClass {
+    width: 100px;
+    border: 1px solid;
+    cursor:pointer;
+    display: none;
+    background-color: blueviolet;
+}
+
+.closedImageClass {
+    width: 100px;
+    border: 1px solid;
+    cursor:pointer;
+    display: none;
+    background-color: aqua;
+}
+
+.active {
+    display: block;
+}
+
+.hover {
+    /* transform: scale(2); */
+    background-color: brown;
+}
