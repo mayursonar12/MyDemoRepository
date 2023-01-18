@@ -26,3 +26,7 @@
     /* transform: scale(2); */
     background-color: brown;
 }
+
+.timer {
+    display: flex;
+}
