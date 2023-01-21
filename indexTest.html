@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <!-- All HTML elements -->
+        <!-- Option1: Put all html elemnts which are required for complete project -->
+        <!-- Option2: Only put 1 div and then create as required on the fly with help of JS -->
+        <!-- React is all about option 2 -->
+
+        <div>
+            <p>This is para in div 1</p>
+            <ol>
+                <li>Item1</li>
+                <li>Item2</li>
+                <li>Item3</li>
+                <li>Item4</li>
+            </ol>
+            <ul>
+                <li>Item1</li>
+                <li>Item2</li>
+                <li>Item3</li>
+                <li>Item4</li>
+            <ul>
+        </div>
+        <div>
+            <p class="pclass" id="p1">Test</p>
+            <p class="pclass" id="p2">This is para2 in div 2</p>
+            <p class="pclass" id="p3">This is para3 in div 2</p>
+            <input id="itemInput" type="text" placeholder="ENTER NAME">
+            <button onclick="onBtnClick()">Add Item to list</button>
+            <ol id="ol1">
+
+            </ol>
+        </div>
+
+        <script>
+            // This was JS
+            // Step 1: Accessing the webpage (taking control of elements) elemnts and its values
+            // Step 2: Processing/Deicsion making
+            // Step 3: Modifying the contents of webpage
+
+            // Step 1
+            var paraTag = document.getElementById('p1');
+            var paraTags = document.getElementsByClassName('pclass');
+            var paratext = paraTag.textContent;
+            console.log(paratext);
+
+            // Step 2
+            if (paratext != "This is para in div 2") {
+                paratext = "This is para in div 2";
+            }
+            paraTag.innerHTML = paratext;
+
+            // Step 3
+
+
+            function onBtnClick() {
+                var itemInput = document.getElementById('itemInput');
+                var itemValue = itemInput.value;
+                console.log(itemInput);
+                console.log(itemValue);
+
+                var list = document.getElementById('ol1');
+                
+                if(itemValue != "") {
+                    // Create elements
+                    var item = document.createElement('li');
+                    list.appendChild(item);
+                    // Set value to ur item
+                    item.innerHTML = itemValue;
+                }
+
+            }
+
+        </script>
+
+    </body>
+
+</html>

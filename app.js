@@ -96,4 +96,7 @@ function displayDate () {
 
 setInterval(displayDate, 1000);
 
+var headig = (<h1>This is heading</h1>);
+var headtag = document.getElementById('heading');
+headtag.innerHTML(headig);
 

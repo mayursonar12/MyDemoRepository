@@ -30,3 +30,15 @@
 .timer {
     display: flex;
 }
+
+.navbar {
+    text-align: center;
+}
+.navbar ul {
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    
+
+}
+
