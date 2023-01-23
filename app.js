@@ -100,3 +100,7 @@ var headig = (<h1>This is heading</h1>);
 var headtag = document.getElementById('heading');
 headtag.innerHTML(headig);
 
+
+
+
+

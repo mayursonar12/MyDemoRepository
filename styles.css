@@ -1,3 +1,8 @@
+* {
+    margin:0;
+    
+}
+
 .class4 {
     display:none;
 }
@@ -31,7 +36,7 @@
     display: flex;
 }
 
-.navbar {
+/* .navbar {
     text-align: center;
 }
 .navbar ul {
@@ -40,5 +45,54 @@
     align-items: center;
     
 
+} */
+
+.headerclass {
+    display: flex;
+    justify-content: space-between;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: coral;
+    color:white
 }
 
+.headerclass ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.headerclass ul li {
+    margin-right: 25px;
+}
+
+.headerclass ul li:hover {
+    cursor: pointer;
+    color:black;
+    background-color: white;
+}
+
+.listclass {
+    margin-right: 10px;
+
+}
+
+.restaurantlist{
+    height: 300px;
+    border: 1px solid;
+    display:flex;
+    background-color: black;
+}
+
+.restaurantlist div {
+
+    margin-top: 22px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.restaurant{
+    width: 150px;
+    height: 250px;
+    border: 1px solid white;
+    color:white;
+}
