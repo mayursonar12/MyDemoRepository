@@ -62,7 +62,10 @@
 }
 
 .headerclass ul li {
-    margin-right: 25px;
+
+    width: 50px;
+    margin: 15px;
+    padding:15px
 }
 
 .headerclass ul li:hover {
@@ -95,4 +98,15 @@
     height: 250px;
     border: 1px solid white;
     color:white;
+}
+
+.submenu-1{
+    display: none;
+}
+
+.headerclass ul li:hover .submenu-1 {
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+    margin-bottom: -20px;
 }
